@@ -3,271 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SHOP.CO</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- ================= HEADER ================= -->
     <header>
-      <!-- navbar -->
       <nav class="navbar">
-        <!-- logo -->
         <div class="logo">
           <a href="index.html">SHOP.CO</a>
         </div>
 
-        <!-- nav links -->
         <ul class="nav-links">
-          <li>
-            <a href="#shop">Shop</a>
-          </li>
-          <li>
-            <a href="#on-sale">On Sale</a>
-          </li>
-          <li>
-            <a href="#new-arrivals">New Arrivals</a>
-          </li>
-          <li>
-            <a href="#brands">Brands</a>
-          </li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#on-sale">On Sale</a></li>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+          <li><a href="#brands">Brands</a></li>
         </ul>
 
-        <!-- search -->
+        <!-- SEARCH + CATEGORY FILTER -->
         <div class="search">
           <input
             type="text"
             placeholder="Search for products..."
             class="search-input"
           />
+
+          <select id="category-filter" class="category-filter">
+            <option value="all">All Categories</option>
+            <option value="men's clothing">Men</option>
+            <option value="women's clothing">Women</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+          </select>
         </div>
-       <div class="nav-icons">
 
-  <a href="#cart" class="cart-icon">
-    🛒 <span class="cart-count">0</span>
-  </a>
+        <div class="nav-icons">
+          <a href="#cart" class="cart-icon">
+            🛒 <span class="cart-count">0</span>
+          </a>
 
-  <a href="#profile"> 👤 </a>
-
-</div>
+          <a href="#profile">👤</a>
+        </div>
       </nav>
     </header>
-    <!-- ========= MAIN ========= -->
+
+    <!-- ================= MAIN ================= -->
     <main>
-      <!--hero section-->
+      <!-- HERO -->
       <section class="hero-section">
-        <!--text content-->
         <div class="hero-content">
-          <!--heading-->
           <h1 class="hero-title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
 
-          <!--button-->
           <a href="#shop" class="hero-button"> Shop Now </a>
         </div>
 
-        <!--image-->
         <div class="hero-image">
-          <img src="assets/images/hero-image.jpg" alt="modeling" />
+          <img src="assets/images/hero-image.jpg" alt="model" />
         </div>
       </section>
-      <!--brands section-->
+
+      <!-- BRANDS -->
       <section id="brands" class="brands">
-        <!--brand names container-->
         <div class="brand-logos">
-          <div class="brand">
-            <span>VERSACE</span>
-          </div>
-
-          <div class="brand">
-            <span>ZARA</span>
-          </div>
-
-          <div class="brand">
-            <span>GUCCI</span>
-          </div>
-
-          <div class="brand">
-            <span>PRADA</span>
-          </div>
-
-          <div class="brand">
-            <span>Calvin Klein</span>
-          </div>
+          <div class="brand"><span>VERSACE</span></div>
+          <div class="brand"><span>ZARA</span></div>
+          <div class="brand"><span>GUCCI</span></div>
+          <div class="brand"><span>PRADA</span></div>
+          <div class="brand"><span>Calvin Klein</span></div>
         </div>
       </section>
-      <!-- new arrivals -->
+
+      <!-- NEW ARRIVALS (API PRODUCTS) -->
       <section id="new-arrivals" class="new-arrivals">
-        <!--section title-->
         <h2 class="section-title">NEW ARRIVALS</h2>
 
-        <!--arrivals container-->
-        <div class="products">
-          <!--product 1-->
-          <div class="product-card">
-            <img
-              src="assets/images/product1.png"
-              alt="T-shirt"
-              class="product-image"
-            />
-
-            <h3 class="product-title">T-shirt with Tape Details</h3>
-
-            <p class="product-price">$120</p>
-
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-
-          <!--product 2-->
-          <div class="product-card">
-            <img
-              src="assets/images/product2.png"
-              alt="Jeans"
-              class="product-image"
-            />
-
-            <h3 class="product-title">Skinny Fit Jeans</h3>
-
-            <p class="product-price">$240</p>
-
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-
-          <!-- product 3 -->
-          <div class="product-card">
-            <img
-              src="assets/images/product3.png"
-              alt="Shirt"
-              class="product-image"
-            />
-
-            <h3 class="product-title">Checkered Shirt</h3>
-
-            <p class="product-price">$180</p>
-
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-
-          <!-- product 4 -->
-          <div class="product-card">
-            <img
-              src="assets/images/product4.png"
-              alt="T-shirt"
-              class="product-image"
-            />
-
-            <h3 class="product-title">Sleeve Striped T-shirt</h3>
-
-            <p class="product-price">$130</p>
-
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
+        <div class="products" id="product-list">
+          <!-- PRODUCTS FROM API -->
         </div>
 
-        <!--view all button-->
         <div class="view-all">
           <button>View All</button>
         </div>
       </section>
-      <!-- top sellings -->
+
+      <!-- TOP SELLING -->
       <section class="top-sellings" id="top-sellings">
-        <!-- section title -->
         <h2 class="section-title">TOP SELLING</h2>
 
-        <!-- products container -->
         <div class="products">
-          <!-- product 5 -->
           <div class="product-card">
-            <img
-              src="assets/images/product5.png"
-              alt="Polo with Contrast Trims"
-            />
+            <img src="assets/images/product5.png" />
 
             <h3 class="product-title">Polo with Contrast Trims</h3>
 
             <p class="product-price">$212</p>
+
             <button class="add-to-cart">Add to Cart</button>
           </div>
 
-          <!-- product 6 -->
           <div class="product-card">
-            <img
-              src="assets/images/product6.png"
-              alt="Gradient Graphic T-shirt"
-            />
+            <img src="assets/images/product6.png" />
 
             <h3 class="product-title">Gradient Graphic T-shirt</h3>
 
             <p class="product-price">$145</p>
+
             <button class="add-to-cart">Add to Cart</button>
           </div>
 
-          <!-- product 7 -->
           <div class="product-card">
-            <img
-              src="assets/images/product7.png"
-              alt="Polo with Tipping Details"
-            />
+            <img src="assets/images/product7.png" />
 
             <h3 class="product-title">Polo with Tipping Details</h3>
 
             <p class="product-price">$180</p>
+
             <button class="add-to-cart">Add to Cart</button>
           </div>
 
-          <!-- product 8 -->
           <div class="product-card">
-            <img src="assets/images/product8.png" alt="Black Striped T-shirt" />
+            <img src="assets/images/product8.png" />
 
             <h3 class="product-title">Black Striped T-shirt</h3>
 
             <p class="product-price">$120</p>
+
             <button class="add-to-cart">Add to Cart</button>
           </div>
         </div>
 
-        <!-- view all button -->
         <div class="view-all">
           <button class="view-all-btn">View All</button>
         </div>
       </section>
     </main>
-    <!-- CART SECTION -->
-<div class="cart">
 
-  <h3>Cart</h3>
+    <!-- CART -->
+    <div class="cart">
+      <h3>Cart</h3>
 
-  <ul class="cart-items"></ul>
+      <ul class="cart-items"></ul>
 
-  <p>Total: $<span class="total-price">0</span></p>
+      <p>
+        Total: $
+        <span class="total-price">0</span>
+      </p>
+    </div>
 
-</div>
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
-        <!-- footer columns -->
         <div class="footer-links">
-          <!-- Company -->
           <div class="footer-column">
             <h4>Company</h4>
-
             <p>About</p>
             <p>Features</p>
             <p>Works</p>
             <p>Career</p>
           </div>
 
-          <!-- Help -->
           <div class="footer-column">
             <h4>Help</h4>
-
             <p>Customer Support</p>
             <p>Delivery Details</p>
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
           </div>
 
-          <!-- FAQ -->
           <div class="footer-column">
             <h4>FAQ</h4>
-
             <p>Account</p>
             <p>Manage Deliveries</p>
             <p>Orders</p>
@@ -276,21 +182,15 @@
         </div>
       </div>
     </footer>
-    <footer class="footer">
-  ...
-</footer>
 
-<!-- MODAL -->
-<div class="modal" style="display:none;">
+    <!-- MODAL -->
+    <div class="modal" style="display: none">
+      <span class="close-btn"> X </span>
 
-  <span class="close-btn">X</span>
+      <img src="" class="modal-image" />
+    </div>
 
-  <img src="" class="modal-image">
-
-</div>
-
-<script src="script.js"></script>
+    <!-- SCRIPT -->
     <script src="script.js"></script>
-</body>
   </body>
 </html>
