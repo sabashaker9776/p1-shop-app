@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -39,12 +39,15 @@
             class="search-input"
           />
         </div>
-        <!-- icons -->
-        <div class="nav-icons">
-          <a href="#cart"> 🛒 </a>
+       <div class="nav-icons">
 
-          <a href="#profile"> 👤 </a>
-        </div>
+  <a href="#cart" class="cart-icon">
+    🛒 <span class="cart-count">0</span>
+  </a>
+
+  <a href="#profile"> 👤 </a>
+
+</div>
       </nav>
     </header>
     <!-- ========= MAIN ========= -->
@@ -62,249 +65,232 @@
 
         <!--image-->
         <div class="hero-image">
-          <img src="assets/images/hero-image.jpg" alt="modeling"/>
+          <img src="assets/images/hero-image.jpg" alt="modeling" />
         </div>
       </section>
-     <!--brands section-->
-<section id="brands" class="brands">
+      <!--brands section-->
+      <section id="brands" class="brands">
+        <!--brand names container-->
+        <div class="brand-logos">
+          <div class="brand">
+            <span>VERSACE</span>
+          </div>
 
-  <!--brand names container-->
-  <div class="brand-logos">
+          <div class="brand">
+            <span>ZARA</span>
+          </div>
 
-    <div class="brand">
-      <span>VERSACE</span>
-    </div>
+          <div class="brand">
+            <span>GUCCI</span>
+          </div>
 
-    <div class="brand">
-      <span>ZARA</span>
-    </div>
+          <div class="brand">
+            <span>PRADA</span>
+          </div>
 
-    <div class="brand">
-      <span>GUCCI</span>
-    </div>
-
-    <div class="brand">
-      <span>PRADA</span>
-    </div>
-
-    <div class="brand">
-      <span>Calvin Klein</span>
-    </div>
-
-  </div>
-
-</section>
+          <div class="brand">
+            <span>Calvin Klein</span>
+          </div>
+        </div>
+      </section>
       <!-- new arrivals -->
-<section id="new-arrivals" class="new-arrivals">
+      <section id="new-arrivals" class="new-arrivals">
+        <!--section title-->
+        <h2 class="section-title">NEW ARRIVALS</h2>
 
-  <!--section title-->
-  <h2 class="section-title">NEW ARRIVALS</h2>
+        <!--arrivals container-->
+        <div class="products">
+          <!--product 1-->
+          <div class="product-card">
+            <img
+              src="assets/images/product1.png"
+              alt="T-shirt"
+              class="product-image"
+            />
 
-  <!--arrivals container-->
-  <div class="products">
+            <h3 class="product-title">T-shirt with Tape Details</h3>
 
-    <!--product 1-->
-    <div class="product-card">
+            <p class="product-price">$120</p>
 
-      <img src="assets/images/product1.png" alt="T-shirt" class="product-image">
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
 
-      <h3 class="product-title">T-shirt with Tape Details</h3>
+          <!--product 2-->
+          <div class="product-card">
+            <img
+              src="assets/images/product2.png"
+              alt="Jeans"
+              class="product-image"
+            />
 
-      <p class="product-price">$120</p>
+            <h3 class="product-title">Skinny Fit Jeans</h3>
 
-      <button class="add-to-cart">Add to Cart</button>
+            <p class="product-price">$240</p>
 
-    </div>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
 
+          <!-- product 3 -->
+          <div class="product-card">
+            <img
+              src="assets/images/product3.png"
+              alt="Shirt"
+              class="product-image"
+            />
 
-    <!--product 2-->
-    <div class="product-card">
+            <h3 class="product-title">Checkered Shirt</h3>
 
-      <img src="assets/images/product2.png" alt="Jeans" class="product-image">
+            <p class="product-price">$180</p>
 
-      <h3 class="product-title">Skinny Fit Jeans</h3>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
 
-      <p class="product-price">$240</p>
+          <!-- product 4 -->
+          <div class="product-card">
+            <img
+              src="assets/images/product4.png"
+              alt="T-shirt"
+              class="product-image"
+            />
 
-      <button class="add-to-cart">Add to Cart</button>
+            <h3 class="product-title">Sleeve Striped T-shirt</h3>
 
-    </div>
+            <p class="product-price">$130</p>
 
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
 
-    <!-- product 3 -->
-    <div class="product-card">
+        <!--view all button-->
+        <div class="view-all">
+          <button>View All</button>
+        </div>
+      </section>
+      <!-- top sellings -->
+      <section class="top-sellings" id="top-sellings">
+        <!-- section title -->
+        <h2 class="section-title">TOP SELLING</h2>
 
-      <img src="assets/images/product3.png" alt="Shirt" class="product-image">
+        <!-- products container -->
+        <div class="products">
+          <!-- product 5 -->
+          <div class="product-card">
+            <img
+              src="assets/images/product5.png"
+              alt="Polo with Contrast Trims"
+            />
 
-      <h3 class="product-title">Checkered Shirt</h3>
+            <h3 class="product-title">Polo with Contrast Trims</h3>
 
-      <p class="product-price">$180</p>
+            <p class="product-price">$212</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
 
-      <button class="add-to-cart">Add to Cart</button>
+          <!-- product 6 -->
+          <div class="product-card">
+            <img
+              src="assets/images/product6.png"
+              alt="Gradient Graphic T-shirt"
+            />
 
-    </div>
+            <h3 class="product-title">Gradient Graphic T-shirt</h3>
 
+            <p class="product-price">$145</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
 
-    <!-- product 4 -->
-    <div class="product-card">
+          <!-- product 7 -->
+          <div class="product-card">
+            <img
+              src="assets/images/product7.png"
+              alt="Polo with Tipping Details"
+            />
 
-      <img src="assets/images/product4.png" alt="T-shirt" class="product-image">
+            <h3 class="product-title">Polo with Tipping Details</h3>
 
-      <h3 class="product-title">Sleeve Striped T-shirt</h3>
+            <p class="product-price">$180</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
 
-      <p class="product-price">$130</p>
+          <!-- product 8 -->
+          <div class="product-card">
+            <img src="assets/images/product8.png" alt="Black Striped T-shirt" />
 
-      <button class="add-to-cart">Add to Cart</button>
+            <h3 class="product-title">Black Striped T-shirt</h3>
 
-    </div>
+            <p class="product-price">$120</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
 
-  </div>
-
-  <!--view all button-->
-  <div class="view-all">
-    <button>View All</button>
-  </div>
-
-</section>
-    <!-- top sellings -->
-<section class="top-sellings" id="top-sellings">
-
-  <!-- section title -->
-  <h2 class="section-title">TOP SELLING</h2>
-
-  <!-- products container -->
-  <div class="products">
-
-    <!-- product 5 -->
-    <div class="product-card">
-
-      <img src="assets/images/product5.png" alt="Polo with Contrast Trims">
-
-      <h3 class="product-title">
-        Polo with Contrast Trims
-      </h3>
-
-      <p class="product-price">
-        $212
-      </p>
-
-    </div>
-
-
-    <!-- product 6 -->
-    <div class="product-card">
-
-      <img src="assets/images/product6.png" alt="Gradient Graphic T-shirt">
-
-      <h3 class="product-title">
-        Gradient Graphic T-shirt
-      </h3>
-
-      <p class="product-price">
-        $145
-      </p>
-
-    </div>
-
-
-    <!-- product 7 -->
-    <div class="product-card">
-
-      <img src="assets/images/product7.png" alt="Polo with Tipping Details">
-
-      <h3 class="product-title">
-        Polo with Tipping Details
-      </h3>
-
-      <p class="product-price">
-        $180
-      </p>
-
-    </div>
-
-
-    <!-- product 8 -->
-    <div class="product-card">
-
-      <img src="assets/images/product8.png" alt="Black Striped T-shirt">
-
-      <h3 class="product-title">
-        Black Striped T-shirt
-      </h3>
-
-      <p class="product-price">
-        $120
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <!-- view all button -->
-  <div class="view-all">
-
-    <button class="view-all-btn">
-      View All
-    </button>
-
-  </div>
-
-</section>
+        <!-- view all button -->
+        <div class="view-all">
+          <button class="view-all-btn">View All</button>
         </div>
       </section>
     </main>
-   <!-- ================= FOOTER ================= -->
-<footer class="footer">
+    <!-- CART SECTION -->
+<div class="cart">
 
-  <div class="footer-container">
+  <h3>Cart</h3>
 
-    <!-- footer columns -->
-    <div class="footer-links">
+  <ul class="cart-items"></ul>
 
-      <!-- Company -->
-      <div class="footer-column">
+  <p>Total: $<span class="total-price">0</span></p>
 
-        <h4>Company</h4>
+</div>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- footer columns -->
+        <div class="footer-links">
+          <!-- Company -->
+          <div class="footer-column">
+            <h4>Company</h4>
 
-        <p>About</p>
-        <p>Features</p>
-        <p>Works</p>
-        <p>Career</p>
+            <p>About</p>
+            <p>Features</p>
+            <p>Works</p>
+            <p>Career</p>
+          </div>
 
+          <!-- Help -->
+          <div class="footer-column">
+            <h4>Help</h4>
+
+            <p>Customer Support</p>
+            <p>Delivery Details</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+
+          <!-- FAQ -->
+          <div class="footer-column">
+            <h4>FAQ</h4>
+
+            <p>Account</p>
+            <p>Manage Deliveries</p>
+            <p>Orders</p>
+            <p>Payments</p>
+          </div>
+        </div>
       </div>
-
-
-      <!-- Help -->
-      <div class="footer-column">
-
-        <h4>Help</h4>
-
-        <p>Customer Support</p>
-        <p>Delivery Details</p>
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-
-      </div>
-
-
-      <!-- FAQ -->
-      <div class="footer-column">
-
-        <h4>FAQ</h4>
-
-        <p>Account</p>
-        <p>Manage Deliveries</p>
-        <p>Orders</p>
-        <p>Payments</p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
+    </footer>
+    <footer class="footer">
+  ...
 </footer>
+
+<!-- MODAL -->
+<div class="modal" style="display:none;">
+
+  <span class="close-btn">X</span>
+
+  <img src="" class="modal-image">
+
+</div>
+
+<script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
   </body>
 </html>

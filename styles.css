@@ -13,7 +13,7 @@
 ========================= */
 
 :root {
-  --primary-color: #0d6efd;
+  --primary-color: #000000;
   --secondary-color: #6c757d;
   --bg-color: #f8f9fa;
   --text-color: #212529;
@@ -86,7 +86,25 @@ img {
   margin-left: 16px;
   font-size: 20px;
 }
+/* cart count badge */
+.cart-icon {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 
+.cart-count {
+  background-color: red;
+  color: white;
+
+  border-radius: 50%;
+
+  padding: 2px 6px;
+
+  font-size: 12px;
+
+  margin-left: 5px;
+}
 /* =========================
    HERO SECTION
 ========================= */
@@ -98,15 +116,16 @@ img {
 
   padding: 48px 32px;
 
-  background-color: var(--white);
+  background-color: #f2f0f1;
 }
 
 .hero-content {
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .hero-title {
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: 900;
   margin-bottom: 16px;
 }
 
@@ -123,11 +142,11 @@ img {
 }
 
 .hero-button:hover {
-  background-color: #0b5ed7;
+  background-color: #373c44;
 }
 
 .hero-image img {
-  width: 350px;
+  width: 450px;
 }
 
 /* =========================
@@ -136,7 +155,8 @@ img {
 
 .brands {
   padding: 32px;
-  background-color: var(--white);
+  color: white;
+  background-color: black;
 }
 
 .brand-logos {
@@ -156,8 +176,10 @@ img {
 
 .section-title {
   text-align: center;
+  font-weight: 900;
+  margin-top: 32px;
   margin-bottom: 32px;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 /* =========================
